@@ -3,7 +3,7 @@ position: absolute;
 top: 1549px;
 left: 1920px;
 width: 1920px;
-height: 1441px;
+height: 1457px;
 transform: rotate(-180deg);
 transform-origin: 0 0;
 }
@@ -18,11 +18,11 @@ width: 1920px;
 }
 .vector-icon {
 position: absolute;
-height: 98.28%;
-width: 18.45%;
+height: 98.36%;
+width: 18.46%;
 top: 1.72%;
-right: 0%;
-bottom: 0%;
+right: -0.01%;
+bottom: -0.08%;
 left: 81.55%;
 max-width: 100%;
 overflow: hidden;
@@ -31,19 +31,19 @@ max-height: 100%;
 .github-icon {
 position: absolute;
 top: 0px;
-left: 84px;
-width: 57px;
-height: 58px;
+left: 61.71px;
+width: 41.9px;
+height: 42.6px;
 overflow: hidden;
 cursor: pointer;
 }
 .linkedin-icon {
 position: absolute;
-height: 96.55%;
-width: 18.12%;
+height: 96.48%;
+width: 18.11%;
 top: 0%;
-right: 81.88%;
-bottom: 3.45%;
+right: 81.89%;
+bottom: 3.52%;
 left: 0%;
 max-width: 100%;
 overflow: hidden;
@@ -52,11 +52,11 @@ cursor: pointer;
 }
 .vector-icon1 {
 position: absolute;
-height: 94.83%;
+height: 94.84%;
 width: 17.8%;
 top: 1.72%;
 right: 27.51%;
-bottom: 3.45%;
+bottom: 3.44%;
 left: 54.69%;
 max-width: 100%;
 overflow: hidden;
@@ -64,12 +64,12 @@ max-height: 100%;
 }
 .social {
 position: absolute;
-height: 4.83%;
-width: 16.09%;
-top: 60.58%;
-right: 41.98%;
-bottom: 34.58%;
-left: 41.93%;
+height: 3.55%;
+width: 11.82%;
+top: 60%;
+right: 44.11%;
+bottom: 36.45%;
+left: 44.06%;
 }
 .a-visual-problem {
 margin: 0;
@@ -97,36 +97,13 @@ align-items: center;
 justify-content: flex-start;
 }
 .hi-im-peter {
-position: relative;
+position: absolute;
+top: 404px;
+left: 643px;
+font-size: 128px;
 letter-spacing: -2px;
 line-height: 96px;
-}
-.heading-1 {
-align-self: stretch;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: flex-start;
-}
-.header1 {
-position: absolute;
-width: calc(100% - 192px);
-top: 490px;
-right: 96px;
-left: 96px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: flex-start;
-font-size: 96px;
-}
-.heading-11 {
-position: absolute;
-width: calc(100% - 823px);
-top: 612px;
-right: 411.5px;
-left: 411.5px;
-height: 96px;
+font-family: Zorque;
 }
 .container {
 position: absolute;
@@ -175,9 +152,11 @@ position: relative;
 line-height: 32.4px;
 }
 .creating-engaging-and-container {
+width: 487px;
 position: relative;
 font-size: 18px;
 line-height: 25.2px;
+display: inline-block;
 }
 .backgroundshadow {
 position: absolute;
@@ -205,6 +184,13 @@ height: 72px;
 overflow: hidden;
 flex-shrink: 0;
 }
+.video-marketing-is-container {
+width: 516px;
+position: relative;
+font-size: 18px;
+line-height: 25.2px;
+display: inline-block;
+}
 .backgroundshadow1 {
 position: absolute;
 height: 100%;
@@ -223,6 +209,13 @@ justify-content: flex-start;
 padding: 39.6px 27px;
 box-sizing: border-box;
 gap: 17.9px;
+}
+.responsive-and-debugged-container {
+width: 525px;
+position: relative;
+font-size: 18px;
+line-height: 25.2px;
+display: inline-block;
 }
 .backgroundshadow2 {
 position: absolute;
@@ -267,7 +260,7 @@ overflow: hidden;
 max-height: 100%;
 object-fit: cover;
 }
-.container3 {
+.container2 {
 position: absolute;
 top: 82px;
 left: 0px;
@@ -322,7 +315,7 @@ border-top: 1px solid rgba(34, 34, 34, 0.2);
 box-sizing: border-box;
 height: 592.6px;
 }
-.container4 {
+.container3 {
 position: absolute;
 width: calc(100% - 909px);
 top: 82px;
@@ -410,12 +403,28 @@ left: 927px;
 width: 801px;
 height: 348px;
 }
+.listitem3 {
+align-self: stretch;
+position: relative;
+border-top: 1px solid rgba(34, 34, 34, 0.2);
+box-sizing: border-box;
+height: 592.6px;
+font-family: Inter;
+}
 .heading-2-the-expert-parent1 {
 position: absolute;
 top: 163.04px;
 left: 927px;
 width: 801px;
 height: 348px;
+}
+.listitem4 {
+align-self: stretch;
+position: relative;
+border-top: 1px solid rgba(34, 34, 34, 0.2);
+box-sizing: border-box;
+height: 592.5px;
+font-family: Inter;
 }
 .heading-29 {
 position: absolute;
@@ -461,6 +470,7 @@ justify-content: flex-start;
 padding: 0px 0px 54px;
 gap: 54px;
 font-size: 18px;
+font-family: Poppins;
 }
 .previous-work {
 position: absolute;
@@ -483,6 +493,15 @@ left: 0px;
 width: 1920px;
 height: 4170.1px;
 color: #000;
+font-family: Zorque;
+}
+.creative-designs-child {
+position: absolute;
+top: 0px;
+left: 0px;
+background-color: #000;
+width: 1920px;
+height: 3005px;
 }
 .lilyachty-wip-icon {
 position: absolute;
@@ -558,30 +577,24 @@ object-fit: cover;
 }
 .creative-images {
 position: absolute;
-top: 204px;
-left: 0px;
+top: 348px;
+left: 96px;
 width: 1728px;
 height: 2592px;
 }
 .creative-header {
 position: absolute;
-top: 0px;
-left: 0px;
+top: 144px;
+left: 96px;
 line-height: 56.7px;
 }
-.creative-design1 {
+.creative-designs {
 position: absolute;
-top: 0px;
+top: 5720px;
 left: 0px;
-width: 1728px;
-height: 2796px;
-}
-.creative-design {
-position: absolute;
-top: 5864px;
-left: 96px;
-width: 1728px;
-height: 2796px;
+width: 1920px;
+height: 3005px;
+font-family: Zorque;
 }
 .group-child {
 position: absolute;
@@ -645,7 +658,7 @@ right: 0px;
 left: 0px;
 height: 27px;
 }
-.as-a-multimedia-container {
+.im-an-american-container {
 position: absolute;
 top: 102px;
 left: 0.41px;
@@ -658,31 +671,23 @@ height: 486px;
 .heading-2-the-expert-parent3 {
 position: absolute;
 top: 0px;
-left: 492.75px;
+left: 0px;
 width: 1018.2px;
 height: 588px;
 }
-.group-inner {
-position: absolute;
-top: 112px;
-left: 0px;
-background-color: #3c3c3c;
-width: 334.6px;
-height: 415px;
-}
-.group-parent {
+.about-me-inner {
 position: absolute;
 top: 110px;
-left: 231px;
-width: 1511px;
+left: 723.75px;
+width: 1018.2px;
 height: 588px;
 }
 .vector-icon3 {
 position: absolute;
 height: 98.28%;
-width: 18.43%;
-top: 1.73%;
-right: 0.01%;
+width: 18.45%;
+top: 1.72%;
+right: 0%;
 bottom: -0.01%;
 left: 81.55%;
 max-width: 100%;
@@ -692,18 +697,18 @@ max-height: 100%;
 .github-icon1 {
 position: absolute;
 top: 0px;
-left: 58.99px;
-width: 40px;
-height: 40.7px;
+left: 42.14px;
+width: 28.6px;
+height: 29.1px;
 overflow: hidden;
 cursor: pointer;
 }
 .linkedin-icon1 {
 position: absolute;
 height: 96.56%;
-width: 18.11%;
+width: 18.13%;
 top: 0%;
-right: 81.89%;
+right: 81.87%;
 bottom: 3.44%;
 left: 0%;
 max-width: 100%;
@@ -713,10 +718,10 @@ cursor: pointer;
 }
 .vector-icon4 {
 position: absolute;
-height: 94.84%;
-width: 17.79%;
-top: 1.73%;
-right: 27.52%;
+height: 94.85%;
+width: 17.81%;
+top: 1.72%;
+right: 27.5%;
 bottom: 3.43%;
 left: 54.69%;
 max-width: 100%;
@@ -725,12 +730,12 @@ max-height: 100%;
 }
 .social1 {
 position: absolute;
-height: 4.47%;
-width: 11.3%;
-top: 74.51%;
-right: 11.72%;
-bottom: 21.02%;
-left: 76.98%;
+height: 3.2%;
+width: 8.07%;
+top: 79.08%;
+right: 46.46%;
+bottom: 17.72%;
+left: 45.47%;
 }
 .about-me {
 position: absolute;
@@ -746,13 +751,24 @@ left: 0px;
 width: 1920px;
 height: 1204px;
 }
+.about-child {
+position: absolute;
+top: 375px;
+left: 231px;
+border-radius: 50%;
+background-color: #d32828;
+width: 335px;
+height: 415px;
+}
 .about {
 position: absolute;
 top: 10010px;
 left: 0px;
 width: 1920px;
 height: 1204px;
+font-size: 63px;
 color: #000;
+font-family: Inter;
 }
 .vector-icon5 {
 position: absolute;
@@ -960,6 +976,7 @@ width: 1920px;
 height: 90px;
 font-size: 16.2px;
 color: #d1d1d1;
+font-family: Inter;
 }
 .body {
 width: 100%;
@@ -967,7 +984,8 @@ position: relative;
 background-color: #000;
 height: 11740px;
 text-align: left;
-font-size: 63px;
+font-size: 96px;
 color: #fff;
-font-family: Inter;
+font-family: Poppins;
 }
+
