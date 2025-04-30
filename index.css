@@ -3,12 +3,6 @@
   src: url(zorque.ttf);
 }
 
-body {
-  transform-origin: top left;
-  margin: 0;
-  overflow-x: hidden; /* Prevent potential horizontal scrollbars */
-}
-
 /* Very small mobile devices */
 @media (max-width: 320px) {
   body {
