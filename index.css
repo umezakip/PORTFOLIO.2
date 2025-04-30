@@ -317,10 +317,6 @@ width: 100%;
 flex: 1;
 position: relative;
 overflow: hidden;
-background-image: url('65d32f0771a77f03daa35345_Brick.webp.png');
-background-size: cover;
-background-repeat: no-repeat;
-background-position: top;
 max-width: 819px;
 }
 .heading-25 {
