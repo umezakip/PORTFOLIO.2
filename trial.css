@@ -3,1062 +3,490 @@
   src: url(zorque.ttf);
 }
 
+/* Base styles (for larger screens - desktop first) */
+.body {
+  width: 100%;
+  position: relative;
+  background-color: #000;
+  height: auto; /* Adjust height based on content */
+  text-align: left;
+  font-size: 6vw; /* Scalable font size for the base */
+  color: #fff;
+  font-family: Poppins;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: auto; /* Adjust height based on content */
+  text-align: center;
+  font-size: 2.25vw; /* Scalable font size */
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: auto; /* Adjust height based on content */
+  overflow: hidden; /* Clip content that goes outside */
+}
 
 .background-video {
-  position: relative; /* Changed to relative */
-  top: 1549px;
-  left: 0; /* Changed to 0 to align to the left of its container */
-  width: 100%; /* Changed to 100% to be responsive */
-  height: auto; /* Changed to auto to maintain aspect ratio */
-  transform: rotate(-180deg);
-  transform-origin: 0 0;
+  position: absolute;
+  top: 0; /* Start from the top */
+  left: 0; /* Start from the left */
+  width: 100%;
+  height: 100%;
+  transform: rotate(0deg); /* Reset rotation for normal view */
+  transform-origin: center center; /* Rotate around the center */
+  object-fit: cover; /* Ensure video covers the entire container */
 }
+
 .overlaygradient {
   position: absolute;
-  height: 100%; /* Changed to 100% to cover the viewport */
-  top: 0px;
-  bottom: auto; /* Removed fixed bottom */
-  left: 0px;
-  background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), linear-gradient(180deg, rgba(0, 0, 0, 0) 68%, #000 85%), radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 9%, #000 60%);
-  width: 100%; /* Changed to 100% to be responsive */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 68%, #000 85%),
+    radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 9%, #000 60%);
 }
+
 .main-social-icon {
   position: absolute;
-  height: auto; /* Changed to auto */
-  width: auto; /* Changed to auto */
-  top: 32px; /* Changed to a fixed position from the top */
-  right: auto; /* Removed fixed right */
-  bottom: auto; /* Removed fixed bottom */
-  left: 32px; /* Changed to a fixed position from the left */
-  max-width: 48px; /* Set a maximum width */
+  height: auto; /* Adjust height based on width */
+  width: 11.82vw; /* Scalable width */
+  top: 60%;
+  right: auto;
+  bottom: auto;
+  left: 44.09vw; /* Adjusted for centering */
+  max-width: 60px; /* Limit maximum size */
   overflow: hidden;
-  max-height: 48px; /* Set a maximum height */
+  max-height: none;
 }
-.a-visual-problem {
-  margin: 0;
+
+.header-sub-text {
+  position: absolute;
+  top: 40%; /* Adjust vertical positioning */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  width: 80%; /* Adjust width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center; /* Center text within */
 }
-.a-visual-problem-container {
-  position: relative;
-  line-height: 1.4; /* Adjusted for better readability */
-}
+
 .container1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 90%; /* Made width responsive */
-  max-width: 1458px;
-  margin: 0 auto; /* Centered the container */
+  max-width: 90%; /* Make container responsive */
 }
-.header-sub-text {
-  position: absolute;
-  width: 90%; /* Made width responsive */
-  top: 50%; /* Adjusted vertical positioning */
-  right: auto; /* Removed fixed right */
-  left: 5%; /* Adjusted left positioning */
-  transform: translateY(-50%); /* Centered vertically */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+
+.a-visual-problem-container {
+  line-height: 1.6; /* Use unitless line height for scalability */
+  font-size: 1.2vw; /* Scalable font size */
 }
+
+.a-visual-problem {
+  margin: 0.5em 0; /* Use em for relative spacing */
+}
+
 .hero-text {
   position: absolute;
-  top: 30%; /* Adjusted vertical positioning */
-  left: 50%; /* Adjusted horizontal positioning */
-  transform: translate(-50%, -50%); /* Centered both horizontally and vertically */
-  font-size: 6vw; /* Made font size responsive */
-  letter-spacing: -0.01em; /* Adjusted letter spacing */
-  line-height: 1; /* Adjusted line height */
+  top: 25%; /* Adjust vertical positioning */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  font-size: 10vw; /* Scalable font size */
+  letter-spacing: -0.015625em; /* Scalable letter spacing */
+  line-height: 0.75; /* Unitless line height */
   font-family: Zorque;
 }
-.container {
-  position: relative; /* Changed to relative */
-  top: 0px;
-  left: 0px;
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
+
+.mini-tabs {
+  position: relative; /* Remove absolute positioning for flow */
+  display: flex;
+  justify-content: space-around; /* Distribute tabs evenly */
+  align-items: center;
+  width: 90%;
+  margin: 2em auto; /* Center and add spacing */
+  padding: 1em 0;
+  font-size: 2vw; /* Scalable font size */
+  flex-wrap: wrap; /* Allow tabs to wrap on smaller screens */
+  gap: 1em; /* Spacing between tabs */
 }
-.home {
-  position: relative; /* Changed to relative */
-  top: 0px;
-  left: 0px;
-  width: 100%; /* Made width responsive */
-  min-height: 100vh; /* Set minimum height to viewport height */
-  text-align: center;
-  font-size: 1.35rem; /* Adjusted font size to rem */
+
+.backgroundshadow {
+  flex: 1; /* Distribute available space */
+  box-shadow: 0px 2px 7px rgba(20, 20, 43, 0.06);
+  border-radius: 1.4vw; /* Scalable border radius */
+  background-color: #0f0f0f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2vw; /* Scalable padding */
+  box-sizing: border-box;
+  gap: 0.8vw; /* Scalable gap */
+  min-width: 250px; /* Minimum width for each tab */
 }
-.vector-icon {
-  width: auto; /* Made width auto */
-  position: relative;
-  height: 2.8rem; /* Adjusted height to rem */
-}
-.img-icon {
-  width: auto; /* Made width auto */
-  position: relative;
-  height: 3.375rem; /* Adjusted height to rem */
-}
+
 .overlayshadow {
-  width: auto; /* Made width auto */
-  box-shadow: 0px 0px 29px -8px rgba(24, 24, 24, 0.4);
-  border-radius: 1.16rem; /* Adjusted border radius to rem */
+  width: 10vw; /* Scalable width */
+  box-shadow: 0px 0px 2.9vw -0.4vw rgba(24, 24, 24, 0.4); /* Scalable shadow */
+  border-radius: 0.96vw; /* Scalable border radius */
   background-color: rgba(255, 255, 255, 0);
-  height: 4.5rem; /* Adjusted height to rem */
+  height: auto; /* Adjust height based on width */
   overflow: hidden;
   flex-shrink: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 0px 0.56rem 0px 0.94rem; /* Adjusted padding to rem */
+  padding: 0 0.5vw 0 0.8vw; /* Scalable padding */
   box-sizing: border-box;
-  gap: 1.25rem; /* Adjusted gap to rem */
+  gap: 1vw; /* Scalable gap */
 }
+
+.vector-icon {
+  width: 1.56vw; /* Scalable width */
+  position: relative;
+  height: auto; /* Adjust height based on width */
+}
+
+.img-icon {
+  width: 3.18vw; /* Scalable width */
+  position: relative;
+  height: auto; /* Adjust height based on width */
+}
+
 .heading-2 {
   position: relative;
-  line-height: 1.5rem; /* Adjusted line height to rem */
-  font-size: 1.5rem; /* Added font size */
+  line-height: 1.7vw; /* Scalable line height */
+  font-size: 1.6vw; /* Scalable font size */
 }
+
 .creating-engaging-and-container {
-  width: 90%; /* Made width responsive */
+  width: 100%; /* Make text wrap */
   position: relative;
-  font-size: 1rem; /* Adjusted font size to rem */
-  line-height: 1.4; /* Adjusted line height */
+  font-size: 0.9vw; /* Scalable font size */
+  line-height: 1.4vw; /* Scalable line height */
   display: inline-block;
+  text-align: center;
 }
-.backgroundshadow {
-  position: relative; /* Changed to relative */
-  height: auto; /* Changed to auto */
-  width: 90%; /* Made width responsive */
-  top: auto; /* Removed fixed top */
-  right: auto; /* Removed fixed right */
-  bottom: auto; /* Removed fixed bottom */
-  left: auto; /* Removed fixed left */
-  margin: 1rem auto; /* Centered and added margin */
-  box-shadow: 0px 0.125rem 0.438rem rgba(20, 20, 43, 0.06); /* Adjusted shadow to rem */
-  border-radius: 1.688rem; /* Adjusted border radius to rem */
-  background-color: #0f0f0f;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 2.475rem 1.688rem; /* Adjusted padding to rem */
-  box-sizing: border-box;
-  gap: 1.12rem; /* Adjusted gap to rem */
-}
+
 .overlayshadow-icon {
-  width: 4.5rem; /* Adjusted width to rem */
-  border-radius: 1.16rem; /* Adjusted border radius to rem */
-  height: 4.5rem; /* Adjusted height to rem */
+  width: 3.75vw; /* Scalable width */
+  border-radius: 0.96vw; /* Scalable border radius */
+  height: auto; /* Adjust height based on width */
   overflow: hidden;
   flex-shrink: 0;
 }
-.video-marketing-is-container {
-  width: 90%; /* Made width responsive */
-  position: relative;
-  font-size: 1rem; /* Adjusted font size to rem */
-  line-height: 1.4; /* Adjusted line height */
-  display: inline-block;
-}
-.backgroundshadow1 {
-  position: relative; /* Changed to relative */
-  height: auto; /* Changed to auto */
-  width: 90%; /* Made width responsive */
-  top: auto; /* Removed fixed top */
-  right: auto; /* Removed fixed right */
-  bottom: auto; /* Removed fixed bottom */
-  left: auto; /* Removed fixed left */
-  margin: 1rem auto; /* Centered and added margin */
-  box-shadow: 0px 0.125rem 0.438rem rgba(20, 20, 43, 0.06); /* Adjusted shadow to rem */
-  border-radius: 1.688rem; /* Adjusted border radius to rem */
-  background-color: #0f0f0f;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 2.475rem 1.688rem; /* Adjusted padding to rem */
-  box-sizing: border-box;
-  gap: 1.12rem; /* Adjusted gap to rem */
-}
+
+.video-marketing-is-container,
 .responsive-and-debugged-container {
-  width: 90%; /* Made width responsive */
+  width: 100%;
   position: relative;
-  font-size: 1rem; /* Adjusted font size to rem */
-  line-height: 1.4; /* Adjusted line height */
+  font-size: 0.9vw;
+  line-height: 1.4vw;
   display: inline-block;
-}
-.backgroundshadow2 {
-  position: relative; /* Changed to relative */
-  height: auto; /* Changed to auto */
-  width: 90%; /* Made width responsive */
-  top: auto; /* Removed fixed top */
-  right: auto; /* Removed fixed right */
-  bottom: auto; /* Removed fixed bottom */
-  left: auto; /* Removed fixed left */
-  margin: 1rem auto; /* Centered and added margin */
-  box-shadow: 0px 0.125rem 0.438rem rgba(20, 20, 43, 0.06); /* Adjusted shadow to rem */
-  border-radius: 1.688rem; /* Adjusted border radius to rem */
-  background-color: #0f0f0f;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 2.475rem 1.688rem; /* Adjusted padding to rem */
-  box-sizing: border-box;
-  gap: 1.12rem; /* Adjusted gap to rem */
-}
-.mini-tabs {
-  position: relative; /* Changed to relative */
-  height: auto; /* Changed to auto */
-  width: 90%; /* Made width responsive */
-  top: auto; /* Removed fixed top */
-  right: auto; /* Removed fixed right */
-  bottom: auto; /* Removed fixed bottom */
-  left: auto; /* Removed fixed left */
-  margin: 2rem auto; /* Centered and added margin */
   text-align: center;
-  font-size: 2rem; /* Adjusted font size to rem */
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; /* Added flex-wrap for responsiveness */
-  justify-content: space-around; /* Adjusted justifyContent */
-  gap: 1rem; /* Added gap */
 }
-.prev-work-heading {
-  position: relative;
-  line-height: 1.6; /* Adjusted line height */
-  font-size: 2.25rem; /* Added font size */
-}
-.ffb3ccabc0dee19f41f27-sciventu-icon {
-  width: 100%;
-  flex: 1;
-  position: relative;
-  max-width: 100%; /* Made max-width responsive */
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: cover;
-}
-.container2 {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  border-radius: 0.788rem; /* Adjusted border radius to rem */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-bottom: 2rem; /* Added margin */
-}
-.heading-23 {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  font-size: 2.625rem; /* Adjusted font size to rem */
-  line-height: 1.4; /* Adjusted line height */
-  display: inline-block;
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-}
-.the-national-basketball {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  line-height: 1.5; /* Adjusted line height */
-  display: inline-block;
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  font-size: 1rem; /* Added font size */
-}
-.provided-the-logos-container {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  line-height: 1.5; /* Adjusted line height */
-  display: inline-block;
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  font-size: 1rem; /* Added font size */
-}
-.heading-2-the-expert-parent {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  margin-left: 1rem; /* Added margin */
-}
-.div {
-  display: flex; /* Changed to flex */
-  flex-direction: row; /* Default row */
-  gap: 2rem; /* Added gap */
-  align-items: flex-start;
-  padding-bottom: 2rem; /* Added padding */
-  border-top: 1px solid rgba(34, 34, 34, 0.2);
-  box-sizing: border-box;
-  width: 90%; /* Made width responsive */
-  margin: 0 auto; /* Centered */
-}
-.container3 {
-  position: relative; /* Changed to relative */
-  width: 100%; /* Made width responsive */
-  top: auto; /* Removed fixed top */
-  right: auto; /* Removed fixed right */
-  left: auto; /* Removed fixed left */
-  border-radius: 0.788rem; /* Adjusted border radius to rem */
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-bottom: 2rem; /* Added margin */
-}
-.heading-2-the-expert-group {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  margin-left: 1rem; /* Added margin */
-}
-.div1 {
-  display: flex; /* Changed to flex */
-  flex-direction: row; /* Default row */
-  gap: 2rem; /* Added gap */
-  align-items: flex-start;
-  padding-bottom: 2rem; /* Added padding */
-  border-top: 1px solid rgba(34, 34, 34, 0.2);
-  box-sizing: border-box;
-  width: 90%; /* Made width responsive */
-  margin: 0 auto; /* Centered */
-}
-.ag-inner-1 {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  object-fit: cover;
-}
-.d32f0771a77f03daa35345-brickw {
-  width: 100%;
-  flex: 1;
-  position: relative;
-  overflow: hidden;
-  max-width: 100%; /* Made max-width responsive */
-}
-.heading-25 {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  font-size: 2.625rem; /* Adjusted font size to rem */
-  line-height: 1.4; /* Adjusted line height */
-  display: inline-block;
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-}
-.heading-2-the-expert-container {
-  position: relative; /* Changed to relative */
-  top: auto;
-    left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  margin-left: 1rem; /* Added margin */
-}
-.threadbox-is-a {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  line-height: 1.5; /* Adjusted line height */
-  display: inline-block;
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  font-size: 1rem; /* Added font size */
-}
-.my-process-for {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  line-height: 1.5; /* Adjusted line height */
-  display: inline-block;
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  font-size: 1rem; /* Added font size */
-}
-.group-div {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  margin-left: 1rem; /* Added margin */
-}
-.div3 {
-  display: flex; /* Changed to flex */
-  flex-direction: row; /* Default row */
-  gap: 2rem; /* Added gap */
-  align-items: flex-start;
-  padding-bottom: 2rem; /* Added padding */
-  border-top: 1px solid rgba(34, 34, 34, 0.2);
-  box-sizing: border-box;
-  width: 90%; /* Made width responsive */
-  margin: 0 auto; /* Centered */
-  font-family: Inter;
-}
-.heading-2-the-expert-parent1 {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  margin-left: 1rem; /* Added margin */
-}
-.div4 {
-  display: flex; /* Changed to flex */
-  flex-direction: row; /* Default row */
-  gap: 2rem; /* Added gap */
-  align-items: flex-start;
-  padding-bottom: 2rem; /* Added padding */
-  border-top: 1px solid rgba(34, 34, 34, 0.2);
-  box-sizing: border-box;
-  width: 90%; /* Made width responsive */
-  margin: 0 auto; /* Centered */
-  font-family: Inter;
-}
-.heading-28 {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  font-size: 2.625rem; /* Adjusted font size to rem */
-  line-height: 1.4; /* Adjusted line height */
-  display: inline-block;
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-}
-.curated-colors-is-container {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  line-height: 1.5; /* Adjusted line height */
-  display: inline-block;
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  font-size: 1rem; /* Added font size */
-}
-.this-was-done {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  line-height: 1.5; /* Adjusted line height */
-  display: inline-block;
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  font-size: 1rem; /* Added font size */
-}
-.heading-2-the-expert-parent2 {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  margin-left: 1rem; /* Added margin */
-}
-.previous-work1 {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0px 0px 2rem; /* Adjusted padding to rem */
-  gap: 2rem; /* Adjusted gap to rem */
-  font-size: 1rem; /* Adjusted font size to rem */
-  font-family: Poppins;
-  width: 90%; /* Added responsive width */
-  margin: 0 auto; /* Added centering */
-}
-.previous-work {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  background-color: #e9e8e8;
-  width: 100%; /* Made width responsive */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centered content horizontally */
-  justify-content: flex-start;
-  padding: 4rem 5% 4rem; /* Adjusted padding with percentages */
-  box-sizing: border-box;
-  gap: 1rem; /* Adjusted gap to rem */
-}
+
 .prev-work {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
+  position: relative; /* Remove absolute positioning for flow */
+  width: 100%;
+  padding: 6vw 5vw; /* Scalable padding */
+  box-sizing: border-box;
+  gap: 1vw; /* Scalable gap */
   color: #000;
   font-family: Zorque;
-  padding-bottom: 4rem; /* Added padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
 }
-.lilyachty-wip-icon {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
+
+.previous-work {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  gap: 3vw; /* Scalable gap between project blocks */
+  width: 90%; /* Responsive width */
+  max-width: 1458px; /* Maintain maximum width */
+}
+
+.prev-work-heading {
+  font-size: 4vw; /* Scalable heading */
+  line-height: 1.2;
+  margin-bottom: 1vw;
+  text-align: center; /* Center the heading */
+  width: 100%;
+}
+
+.previous-work1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 3vw;
+  width: 100%;
+}
+
+.div,
+.div1,
+.div3,
+.div4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: 1px solid rgba(34, 34, 34, 0.2);
+  box-sizing: border-box;
+  min-height: auto; /* Adjust height based on content */
+}
+
+.container2,
+.container3 {
+  position: relative;
+  border-radius: 0.65vw; /* Scalable border radius */
+  width: 100%;
+  height: auto; /* Adjust height based on content */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 1.5vw; /* Spacing between image and text */
+}
+
+.ffb3ccabc0dee19f41f27-sciventu-icon,
+.ag-inner-1 {
+  width: 100%;
+  height: auto;
   object-fit: cover;
+  display: block; /* Prevent extra space below image */
 }
-.rolex-icon {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  object-fit: cover;
+
+.heading-23,
+.heading-25,
+.heading-28 {
+  font-size: 3vw; /* Scalable heading */
+  line-height: 1.1;
+  margin-bottom: 0.5vw;
 }
-.guarana-icon {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  object-fit: cover;
+
+.the-national-basketball,
+.threadbox-is-a,
+.curated-colors-is-container,
+.provided-the-logos-container,
+.my-process-for,
+.this-was-done {
+  font-size: 1vw; /* Scalable text */
+  line-height: 1.5;
+  margin-bottom: 1vw;
+  width: 100%;
 }
-.asaprocky-final-icon {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  object-fit: cover;
+
+.heading-2-the-expert-parent,
+.heading-2-the-expert-group,
+.heading-2-the-expert-container,
+.group-div,
+.heading-2-the-expert-parent1,
+.heading-2-the-expert-parent2 {
+  width: 100%;
 }
-.marc-jacobs-icon {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  object-fit: cover;
+
+.creative-designs {
+  position: relative; /* Remove absolute positioning */
+  width: 100%;
+  padding: 5vw;
+  box-sizing: border-box;
+  font-family: Zorque;
+  text-align: center;
 }
-.spidey-icon {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  object-fit: cover;
+
+.creative-header {
+  font-size: 4vw;
+  line-height: 1.2;
+  margin-bottom: 2vw;
 }
-.tyler-the-creator-final {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  object-fit: cover;
-}
-.sabcar-final-icon {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  object-fit: cover;
-}
-.appleinvincible-icon {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  object-fit: cover;
-}
+
 .creative-images {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 90%; /* Made width responsive */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-  gap: 1rem; /* Added gap */
-  margin: 2rem auto; /* Centered */
-  height: auto; /* Made height auto */
+  gap: 2vw;
+  width: 100%;
 }
-.creative-header {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  line-height: 1.6; /* Adjusted line height */
-  font-size: 2.25rem; /* Added font size */
-  text-align: center; /* Centered heading */
-  margin-bottom: 2rem; /* Added margin */
-}
-.creative-designs {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  font-family: Zorque;
-  padding: 4rem 5%; /* Added padding with percentages */
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centered content */
-}
-.video-icon {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 90%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  display: block;
-  margin: 2rem auto; /* Centered */
-}
-.video {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  padding: 4rem 5%; /* Added padding with percentages */
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center; /* Centered video */
-}
-.about-child {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: #000;
-  width: 100%; /* Made width responsive */
-  height: 100%; /* Made height responsive */
-}
-.about-item {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: #d9d9d9;
-  width: 100%; /* Made width responsive */
-  height: 100%; /* Made height responsive */
-  opacity: 0.9;
-}
-.about-me-title {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  line-height: 1.6; /* Adjusted line height */
-  display: inline-block;
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  font-size: 2.25rem; /* Added font size */
-  text-align: center; /* Centered */
-  margin-bottom: 1rem; /* Added margin */
-}
-.body-text {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  font-size: 1rem; /* Adjusted font size to rem */
-  line-height: 1.7; /* Adjusted line height */
-  display: inline-block;
-  width: 90%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  margin: 0 auto 1rem; /* Centered and added margin */
-  text-align: center; /* Centered */
-}
-.text {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 90%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem; /* Adjusted gap to rem */
-  margin: 2rem auto; /* Centered */
-}
-.vector-icon1 {
-  position: relative; /* Changed to relative */
-  height: auto; /* Changed to auto */
-  width: 1.5rem; /* Adjusted width to rem */
-  top: auto; /* Removed fixed top */
-  right: auto; /* Removed fixed right */
-  bottom: auto; /* Removed fixed bottom */
-  left: auto; /* Removed fixed left */
-  max-width: none; /* Removed max-width */
-  overflow: hidden;
-  max-height: none; /* Removed max-height */
-}
-.github-icon {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 1.8rem; /* Adjusted width to rem */
-  height: auto; /* Changed to auto */
-  overflow: hidden;
-  cursor: pointer;
-}
-.linkedin-icon {
-  position: relative; /* Changed to relative */
-  height: auto; /* Changed to auto */
-  width: 1.8rem; /* Adjusted width to rem */
-  top: auto; /* Removed fixed top */
-  right: auto; /* Removed fixed right */
-  bottom: auto; /* Removed fixed bottom */
-  left: auto; /* Removed fixed left */
-  max-width: none; /* Removed max-width */
-  overflow: hidden;
-  max-height: none; /* Removed max-height */
-  cursor: pointer;
-}
-.vector-icon2 {
-  position: relative; /* Changed to relative */
-  height: auto; /* Changed to auto */
-  width: 1.5rem; /* Adjusted width to rem */
-  top: auto; /* Removed fixed top */
-  right: auto; /* Removed fixed right */
-  bottom: auto; /* Removed fixed bottom */
-  left: auto; /* Removed fixed left */
-  max-width: none; /* Removed max-width */
-  overflow: hidden;
-  max-height: none; /* Removed max-height */
-}
-.social {
-  position: relative; /* Changed to relative */
-  height: auto; /* Changed to auto */
-  width: auto; /* Changed to auto */
-  top: auto; /* Removed fixed top */
-  right: auto; /* Removed fixed right */
-  bottom: auto; /* Removed fixed bottom */
-  left: auto; /* Removed fixed left */
-  display: flex;
-  gap: 1.5rem; /* Adjusted gap to rem */
-  justify-content: center; /* Centered social icons */
-  margin-top: 2rem; /* Added margin */
-}
-.picture-icon {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 80%; /* Made width responsive */
-  max-width: 20rem; /* Set a maximum width */
-  height: auto; /* Made height auto */
+
+.lilyachty-wip-icon,
+.rolex-icon,
+.guarana-icon,
+.asaprocky-final-icon,
+.marc-jacobs-icon,
+.spidey-icon,
+.tyler-the-creator-final,
+.sabcar-final-icon,
+.appleinvincible-icon {
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 0.75rem; /* Adjusted border radius to rem */
-  margin-top: 2rem; /* Added margin */
+  display: block;
 }
+
+.video {
+  position: relative; /* Remove absolute positioning */
+  width: 100%;
+  padding: 5vw;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.video-icon {
+  width: 80%; /* Make video responsive */
+  max-width: 1200px; /* Optional maximum width */
+  height: auto;
+}
+
 .about {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  font-size: 2.625rem; /* Adjusted font size to rem */
+  position: relative; /* Remove absolute positioning */
+  width: 100%;
+  padding: 5vw;
+  box-sizing: border-box;
+  font-size: 3vw;
   color: #000;
   font-family: Inter;
-  padding: 4rem 5%; /* Added padding with percentages */
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centered content */
+  align-items: center;
 }
-.vector-icon3 {
-  position: relative; /* Changed to relative */
-  height: auto; /* Changed to auto */
-  width: 1.5rem; /* Adjusted width to rem */
-  top: auto; /* Removed fixed top */
-  right: auto; /* Removed fixed right */
-  bottom: auto; /* Removed fixed bottom */
-  left: auto; /* Removed fixed left */
-  max-width: none; /* Removed max-width */
-  overflow: hidden;
-  max-height: none; /* Removed max-height */
+
+.about-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  width: 100%;
+  height: 30vh; /* Use viewport height for responsiveness */
+  z-index: -1; /* Place behind other content */
 }
-.github-icon1 {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 1.6rem; /* Adjusted width to rem */
-  height: auto; /* Changed to auto */
-  overflow: hidden;
-  cursor: pointer;
+
+.about-item {
+  background-color: #d9d9d9;
+  width: 90%;
+  padding: 3vw;
+  box-sizing: border-box;
 }
-.linkedin-icon1 {
-  position: relative; /* Changed to relative */
-  height: auto; /* Changed to auto */
-  width: 1.6rem; /* Adjusted width to rem */
-  top: auto; /* Removed fixed top */
-  right: auto; /* Removed fixed right */
-  bottom: auto; /* Removed fixed bottom */
-  left: auto; /* Removed fixed left */
-  max-width: none; /* Removed max-width */
-  overflow: hidden;
-  max-height: none; /* Removed max-height */
-  cursor: pointer;
+
+.text {
+  width: 100%;
 }
-.vector-icon4 {
-  position: relative; /* Changed to relative */
-  height: auto; /* Changed to auto */
-  width: 1.5rem; /* Adjusted width to rem */
-  top: auto; /* Removed fixed top */
-  right: auto; /* Removed fixed right */
-  bottom: auto; /* Removed fixed bottom */
-  left: auto; /* Removed fixed left */
-  max-width: none; /* Removed max-width */
-  overflow: hidden;
-  max-height: none; /* Removed max-height */
+
+.about-me-title {
+  font-size: 4vw;
+  line-height: 1.2;
+  margin-bottom: 1vw;
 }
-.footer-socials {
-  position: relative; /* Changed to relative */
-  height: auto; /* Changed to auto */
-  width: auto; /* Changed to auto */
-  top: auto; /* Removed fixed top */
-  right: auto; /* Removed fixed right */
-  bottom: auto; /* Removed fixed bottom */
-  left: auto; /* Removed fixed left */
+
+.body-text {
+  font-size: 1.1vw;
+  line-height: 1.6;
+}
+
+.picture-icon {
+  width: 30%; /* Responsive image width */
+  max-width: 200px; /* Optional maximum width */
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%; /* Make it circular */
+  margin-top: 2vw;
+}
+
+.social {
   display: flex;
-  gap: 1rem; /* Adjusted gap to rem */
-  justify-content: flex-end; /* Aligned to the right */
+  gap: 1.5vw;
+  margin-top: 2vw;
 }
+
+.vector-icon1,
+.vector-icon2,
+.vector-icon4 {
+  width: 2vw;
+  height: auto;
+}
+
+.github-icon,
+.linkedin-icon,
+.github-icon1,
+.linkedin-icon1 {
+  width: 2vw;
+  height: auto;
+  cursor: pointer;
+}
+
+.footer {
+  position: relative; /* Remove absolute positioning */
+  width: 100%;
+  padding: 2vw;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1vw;
+  font-family: "3satHurme";
+  color: #fff; /* Ensure text is visible on black background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1vw;
+  margin-bottom: 1vw;
+}
+
 .copywrite {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  line-height: 1rem; /* Adjusted line height to rem */
+  line-height: 1.2;
   font-weight: 600;
-  text-align: center; /* Centered */
-  margin-top: 1rem; /* Added margin */
 }
+
 .link-home-2-icon {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 10.375rem; /* Adjusted width to rem */
-  height: auto; /* Made height auto */
+  width: 10vw;
+  max-width: 166px;
+  height: auto;
   object-fit: cover;
   cursor: pointer;
+  margin-top: 1vw;
 }
+
 .divider {
-  position: relative; /* Changed to relative */
-  height: 0.063rem; /* Adjusted height to rem */
-  width: 100%; /* Made width responsive */
-  top: auto; /* Removed fixed top */
-  right: auto; /* Removed fixed right */
-  bottom: auto; /* Removed fixed bottom */
-  left: auto; /* Removed fixed left */
+  width: 80%;
+  height: 0.1vw;
   background-color: #fff;
   opacity: 0.25;
-  margin: 2rem 0; /* Added top and bottom margin */
+  margin: 2vw 0;
 }
+
 .hero-text1 {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  font-size: 2.5rem; /* Adjusted font size to rem */
-  line-height: 1.4; /* Adjusted line height */
+  font-size: 3vw;
+  line-height: 1.4;
   font-weight: 600;
-  text-align: center; /* Centered */
+  margin-bottom: 0.5vw;
 }
+
 .sub-text {
-  position: relative; /* Changed to relative */
-  width: 90%; /* Made width responsive */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  line-height: 1.4; /* Adjusted line height */
+  width: 80%;
+  font-size: 1vw;
+  line-height: 1.6;
   font-family: Inter;
-  display: block; /* Changed to block */
   opacity: 0.8;
-  text-align: center; /* Centered */
-  margin: 1rem auto; /* Centered and added margin */
 }
-.footer {
-  position: relative; /* Changed to relative */
-  height: auto; /* Changed to auto */
-  width: 90%; /* Made width responsive */
-  top: auto; /* Removed fixed top */
-  right: auto; /* Removed fixed right */
-  bottom: auto; /* Removed fixed bottom */
-  left: auto; /* Removed fixed left */
-  text-align: center;
-  font-size: 0.875rem; /* Adjusted font size to rem */
-  font-family: '3satHurme';
-  padding: 2rem 0; /* Added padding */
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-.link-home-icon {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 11.56rem; /* Adjusted width to rem */
-  height: auto; /* Made height auto */
-  object-fit: cover;
-  cursor: pointer;
-}
-.link {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  border-radius: 0.56rem; /* Adjusted border radius to rem */
-  border: 0.125rem solid #d1d1d1; /* Adjusted border to rem */
-  box-sizing: border-box;
-  overflow: hidden;
-  display: inline-flex; /* Changed to inline-flex */
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 1.08rem 1.87rem; /* Adjusted padding to rem */
-  max-width: none; /* Removed max-width */
-  cursor: pointer;
-  margin-right: 1rem; /* Added margin */
-}
-.graphic-design {
-  position: relative;
-  letter-spacing: 0.023rem; /* Adjusted letter spacing to rem */
-  line-height: 1.125rem; /* Adjusted line height to rem */
-  font-weight: 600;
-}
-.link1 {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  border-radius: 0.56rem; /* Adjusted border radius to rem */
-  border: 0.125rem solid #d1d1d1; /* Adjusted border to rem */
-  box-sizing: border-box;
-  overflow: hidden;
-  display: inline-flex; /* Changed to inline-flex */
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 1.08rem 1.87rem; /* Adjusted padding to rem */
-  max-width: none; /* Removed max-width */
-  cursor: pointer;
-  margin-right: 1rem; /* Added margin */
-}
-.link2 {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  border-radius: 0.56rem; /* Adjusted border radius to rem */
-  border: 0.125rem solid #d1d1d1; /* Adjusted border to rem */
-  box-sizing: border-box;
-  overflow: hidden;
-  display: inline-flex; /* Changed to inline-flex */
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 1.08rem 1.87rem; /* Adjusted padding to rem */
-  max-width: none; /* Removed max-width */
-  cursor: pointer;
-  margin-right: 1rem; /* Added margin */
-}
-.link3 {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  border-radius: 0.56rem; /* Adjusted border radius to rem */
-  border: 0.125rem solid #d1d1d1; /* Adjusted border to rem */
-  box-sizing: border-box;
-  overflow: hidden;
-  display: inline-flex; /* Changed to inline-flex */
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 1.08rem 1.87rem; /* Adjusted padding to rem */
-  max-width: none; /* Removed max-width */
-  cursor: pointer;
-}
-.nav-bar {
-  position: relative; /* Changed to relative */
-  top: auto; /* Removed fixed top */
-  left: auto; /* Removed fixed left */
-  width: 90%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; /* Centered navigation links */
-  gap: 1rem; /* Added gap */
-}
+
 .banner {
-  position: fixed; /* Changed to fixed for top banner */
-  top: 0px;
-  left: 0px;
+  position: fixed; /* Fixed positioning for consistent navigation */
+  top: 0;
+  left: 0;
   background-color: #000;
-  width: 100%; /* Made width responsive */
-  height: auto; /* Made height auto */
-  font-size: 1rem; /* Adjusted font size to rem */
-  color: #d1d1d1;
-  font-family: Inter;
-  padding: 1rem 5%; /* Added padding with percentages */
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between; /* Space out logo and nav */
-  align-items: center;
-  z-index: 100; /* Ensure it stays on top */
-}
-.body {
   width: 100%;
-  position: relative;
-  background-color: #000;
-  height: auto; /* Made height auto */
-  text-align: left;
-  font-size: 6rem; /* Adjusted font size to rem */
-  color: #fff;
-  font-family: Poppins;
-  padding-top: 3.5rem; /* Added padding to account for fixed banner */
-  box-sizing: border-box;
-}
-
-/* Media Queries for smaller screens */
-@media (max-width: 960px) {
-  .hero-text {
-    font-size: 8vw;
-  }
-  .mini-tabs {
-    flex-direction: column;
-    align-items: center;
-  }
-  .div, .div1, .div3, .div4 {
-    flex-direction: column;
-  }
-  .heading-2-the-expert-parent,
-  .heading-2-the-expert-group,
-  .heading-2-the-expert-container,
-  .group-div,
-  .heading-2-the-expert-parent1,
-  .heading-2-the-expert-parent2 {
-    margin-left: 0;
-  }
-  .nav-bar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .link, .link1, .link2, .link3 {
-    margin-right: 0;
-    margin-bottom: 0.5rem;
-    width: 100%;
-  }
-  .footer-socials {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero-text {
-    font-size: 12vw;
-  }
-  .banner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-  .link-home-icon {
-    width: 8rem;
-  }
-}
+  padding: 1vw 2vw; /* Scalable padding */
