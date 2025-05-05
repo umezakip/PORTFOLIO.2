@@ -1,5 +1,5 @@
 .background-video {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -13,13 +13,13 @@
   min-height: 100%;
   width: auto;
   height: auto;
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .overlay { /* Make sure your overlay is styled appropriately */
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
