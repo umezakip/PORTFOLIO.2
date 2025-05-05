@@ -17,6 +17,14 @@
   	background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), linear-gradient(180deg, rgba(0, 0, 0, 0) 68%, #000 85%), radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 9%, #000 60%);
   	height: 64rem;
 }
+.home-background {
+  	position: absolute;
+  	width: 100%;
+  	top: 0rem;
+  	right: 0rem;
+  	left: 0rem;
+  	height: 64rem;
+}
 .hero-text {
   	align-self: stretch;
   	position: relative;
@@ -87,13 +95,6 @@
   	top: 0rem;
   	right: 0rem;
   	left: 0rem;
-  	height: 64rem;
-}
-.home-wrapper {
-  	position: absolute;
-  	top: 0rem;
-  	left: 0rem;
-  	width: 90rem;
   	height: 64rem;
   	text-align: center;
   	font-size: 8rem;
@@ -340,18 +341,10 @@
 .creative-designs {
   	position: absolute;
   	width: 77.78%;
-  	top: calc(50% - 907.5px);
+  	top: calc(50% - 3215.5px);
   	right: 11.11%;
   	left: 11.11%;
   	height: 115.5rem;
-}
-.creative-designs-wrapper {
-  	position: absolute;
-  	top: 66.75rem;
-  	left: 0rem;
-  	width: 90rem;
-  	height: 122.188rem;
-  	overflow: hidden;
 }
 .video-editing-header {
   	position: absolute;
@@ -369,18 +362,10 @@
 .video-editing {
   	position: absolute;
   	width: 78.06%;
-  	top: calc(50% - 376.5px);
+  	top: calc(50% - 1256.5px);
   	right: 11.11%;
   	left: 10.83%;
   	height: 49rem;
-}
-.video-editing-wrapper {
-  	position: absolute;
-  	top: 189.5rem;
-  	left: 0rem;
-  	width: 90rem;
-  	height: 55.188rem;
-  	overflow: hidden;
 }
 .prev-work-header {
   	position: absolute;
@@ -538,18 +523,10 @@
 .previous-work {
   	position: absolute;
   	width: 77.78%;
-  	top: calc(50% - 1404.5px);
+  	top: calc(50% - 361.5px);
   	right: 11.11%;
   	left: 11.11%;
   	height: 174.313rem;
-}
-.previous-work-wrapper {
-  	position: absolute;
-  	top: 244.938rem;
-  	left: 0rem;
-  	width: 90rem;
-  	height: 184.688rem;
-  	overflow: hidden;
 }
 .background {
   	position: absolute;
@@ -659,18 +636,10 @@
 .about-me {
   	position: absolute;
   	width: 100%;
-  	top: calc(50% - 540.5px);
+  	top: calc(50% + 2663.5px);
   	right: 0rem;
   	left: 0rem;
   	height: 67.625rem;
-}
-.about-me-wrapper {
-  	position: absolute;
-  	top: 438.5rem;
-  	left: 0rem;
-  	width: 90rem;
-  	height: 67.688rem;
-  	overflow: hidden;
   	font-size: 3rem;
   	color: #000;
   	font-family: Poppins;
@@ -747,7 +716,6 @@
   	width: 10.706rem;
   	height: 3.856rem;
   	object-fit: cover;
-  	cursor: pointer;
 }
 .divider {
   	position: absolute;
