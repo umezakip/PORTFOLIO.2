@@ -19,12 +19,12 @@
   transform: translate(-50%, -50%);
 }
 .overlay { /* Make sure your overlay is styled appropriately */
-  position: absolute;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), linear-gradient(180deg, rgba(0, 0, 0, 0) 68%, #000 85%), radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 9%, #000 60%);
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Example overlay with transparency */
   z-index: 0; /* Place it above the video but below the content */
 }
 
