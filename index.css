@@ -773,7 +773,7 @@ body, html {
 .logo-topleft-icon {
   	position: absolute;
   	top: 0rem;
-  	left: 0rem;
+  	left: 10rem;
   	width: 10.5rem;
   	height: 3.75rem;
   	object-fit: cover;
@@ -785,68 +785,17 @@ body, html {
   	line-height: 1.125rem;
   	font-weight: 600;
 }
-.design-link {
-  	position: absolute;
-  	top: 0.375rem;
-  	left: calc(50% - 180px);
-  	border-radius: 9px;
-  	border: 2px solid #d1d1d1;
-  	box-sizing: border-box;
-  	width: 8rem;
-  	height: 2.313rem;
-  	overflow: hidden;
-  	display: flex;
-  	flex-direction: row;
-  	align-items: center;
-  	justify-content: center;
-  	padding: 1.081rem 1.868rem;
-  	max-width: 30.912rem;
-  	cursor: pointer;
-}
-.editing-link {
-  	position: absolute;
-  	top: 0.375rem;
-  	left: calc(50% + 43.27px);
-  	border-radius: 9px;
-  	border: 2px solid #d1d1d1;
-  	box-sizing: border-box;
-  	width: 8rem;
-  	height: 2.313rem;
-  	overflow: hidden;
-  	display: flex;
-  	flex-direction: row;
-  	align-items: center;
-  	justify-content: center;
-  	padding: 1.081rem 1.868rem;
-  	max-width: 30.912rem;
-  	cursor: pointer;
-}
-.prev-link {
-  	position: absolute;
-  	top: 0.375rem;
-  	left: calc(50% + 250.9px);
-  	border-radius: 9px;
-  	border: 2px solid #d1d1d1;
-  	box-sizing: border-box;
-  	width: 10rem;
-  	height: 2.313rem;
-  	overflow: hidden;
-  	display: flex;
-  	flex-direction: row;
-  	align-items: center;
-  	justify-content: center;
-  	padding: 1.081rem 1.868rem;
-  	max-width: 30.912rem;
-  	cursor: pointer;
-}
+
+.design-link,
+.editing-link,
+.prev-link,
 .contact-link {
-  	position: absolute;
-  	top: 0.375rem;
-  	left: calc(50% + 436.81px);
+  	position: relative;
+  	top: auto;
+  	left: auto;
   	border-radius: 9px;
   	border: 2px solid #d1d1d1;
   	box-sizing: border-box;
-  	width: 8rem;
   	height: 2.313rem;
   	overflow: hidden;
   	display: flex;
@@ -867,6 +816,11 @@ body, html {
   	font-size: 1.013rem;
   	color: #d1d1d1;
   	font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10rem;
+    box-sizing: border-box;
 }
 .desktop-1 {
   	width: 100%;
