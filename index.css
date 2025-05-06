@@ -791,7 +791,7 @@ body, html {
   	border-radius: 9px;
   	border: 2px solid #d1d1d1;
   	box-sizing: border-box;
-  	width: 10.9rem;
+  	width: 12rem;
   	height: 2.313rem;
   	overflow: hidden;
   	display: flex;
@@ -809,7 +809,7 @@ body, html {
   	border-radius: 9px;
   	border: 2px solid #d1d1d1;
   	box-sizing: border-box;
-  	width: 9.819rem;
+  	width: 11rem;
   	height: 2.313rem;
   	overflow: hidden;
   	display: flex;
@@ -827,7 +827,7 @@ body, html {
   	border-radius: 9px;
   	border: 2px solid #d1d1d1;
   	box-sizing: border-box;
-  	width: 8.569rem;
+  	width: 10rem;
   	height: 2.313rem;
   	overflow: hidden;
   	display: flex;
@@ -845,7 +845,7 @@ body, html {
   	border-radius: 9px;
   	border: 2px solid #d1d1d1;
   	box-sizing: border-box;
-  	width: 7.7rem;
+  	width: 9rem;
   	height: 2.313rem;
   	overflow: hidden;
   	display: flex;
@@ -860,7 +860,7 @@ body, html {
   	position: absolute;
   	top: 0.563rem;
   	left: 10rem;
-  	width: 70rem;
+  	width: 75rem;
   	height: 3.75rem;
   	font-size: 1.013rem;
   	color: #d1d1d1;
