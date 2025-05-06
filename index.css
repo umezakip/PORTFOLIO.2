@@ -773,7 +773,7 @@ body, html {
 .logo-topleft-icon {
   	position: absolute;
   	top: 0rem;
-  	left: 10rem;
+  	left: 0rem;
   	width: 10.5rem;
   	height: 3.75rem;
   	object-fit: cover;
