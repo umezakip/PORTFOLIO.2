@@ -1,5 +1,5 @@
 .background-video {
-  	position: absolute;
+  	position: relative;
   	width: 100%;
   	top: 64rem;
   	right: -90rem;
@@ -9,7 +9,7 @@
   	transform-origin: 0 0;
 }
 .overlay {
-  	position: absolute;
+  	position: relative;
   	width: 100%;
   	top: 0rem;
   	right: 0rem;
@@ -18,7 +18,7 @@
   	height: 64rem;
 }
 .home-background {
-  	position: absolute;
+  	position: relative;
   	width: 100%;
   	top: 0rem;
   	right: 0rem;
