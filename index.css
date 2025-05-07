@@ -832,14 +832,12 @@ body, html {
   	padding: 1.081rem 1.868rem;
   	max-width: 30.912rem;
   	cursor: pointer;
+    margin-right: 1rem;
 }
 
-.design-link,
-.editing-link,
-.prev-link {
-    margin-right: .2rem;
+.nav-bar > div:last-child {
+    margin-right: 0;
 }
-
 
 .nav-bar {
   	position: sticky;
