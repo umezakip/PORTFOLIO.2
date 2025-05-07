@@ -865,3 +865,19 @@ body, html {
   	color: #fff;
   	font-family: Zorque;
 }
+
+/* For smaller screens (e.g., phones) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .hero-text {
+        font-size: 2rem;
+    }
+}
+
+/* For larger screens (e.g., tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for tablets */
+}
