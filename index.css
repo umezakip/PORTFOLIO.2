@@ -813,7 +813,7 @@ body, html {
 }
 
 .nav-bar {
-  	position: responsive;
+  	position: sticky;
   	top: 0.563rem;
   	left: 10rem;
   	width: 100%;
