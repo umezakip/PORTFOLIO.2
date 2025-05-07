@@ -672,6 +672,14 @@ body, html {
   	color: #000;
   	font-family: Poppins;
 }
+
+.about-socials .vector-icon,
+.about-socials .github-icon1,
+.about-socials .linkedin-icon1,
+.about-socials .vector-icon1 {
+    filter: invert(100%);
+}
+
 .vector-icon2 {
   	position: absolute;
   	height: 98.14%;
