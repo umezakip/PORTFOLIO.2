@@ -25,7 +25,7 @@ body, html {
   	top: 0rem;
   	right: 0rem;
   	left: 0rem;
-  	background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), linear-gradient(180deg, rgba(0, 0, 0, 0) 68%, #000 85%), radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 9%, #000 60%);
+  	background: linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), linear-gradient(180deg, rgba(0, 0, 0, 0) 68%, #000 85%), radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 9%, #000 60%);
   	height: 100%;
 }
 .home-background {
