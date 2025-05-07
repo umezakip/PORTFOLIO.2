@@ -828,6 +828,13 @@ body, html {
   	cursor: pointer;
 }
 
+.design-link,
+.editing-link,
+.prev-link, {
+    margin-right: .2rem;
+}
+
+
 .nav-bar {
   	position: sticky;
   	top: 0.563rem;
