@@ -585,6 +585,7 @@ body, html {
   	max-width: 100%;
   	overflow: hidden;
   	height: 1.788rem;
+    color: #000000;
 }
 .github-icon1 {
   	position: absolute;
@@ -596,6 +597,7 @@ body, html {
   	overflow: hidden;
   	height: 1.819rem;
   	cursor: pointer;
+    color: #000000;
 }
 .linkedin-icon1 {
   	position: absolute;
@@ -607,6 +609,7 @@ body, html {
   	overflow: hidden;
   	height: 1.756rem;
   	cursor: pointer;
+    color: #000000;
 }
 .vector-icon1 {
   	position: absolute;
@@ -617,6 +620,7 @@ body, html {
   	max-width: 100%;
   	overflow: hidden;
   	height: 1.725rem;
+    color: #000000;
 }
 .about-socials {
   	position: absolute;
