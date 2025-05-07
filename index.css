@@ -801,7 +801,7 @@ body, html {
   	display: flex;
   	flex-direction: row;
   	align-items: center;
-  	justify-content: center;
+  	justify-content: space-between;
   	padding: 1.081rem 1.868rem;
   	max-width: 30.912rem;
   	cursor: pointer;
