@@ -113,8 +113,9 @@
     		</div>
     		<div class="video-editing" data-scroll-to="videoEditingContainer">
       			<div class="video-editing-header">Video Editing</div>
-      			<img class="video-icon" alt="" src="originals/WebVid.mp4">
-      			
+      			<video class="video-icon" alt="" src="originals/WebVid.mp4" controls>
+                Your browser does not support the video tag.
+            </video>
     		</div>
     		<div class="previous-work" data-scroll-to="previousWorkContainer">
       			<div class="prev-work-header">Previous Work</div>
@@ -328,5 +329,17 @@
         				}
       			});
     		}
+       
+        const videoElement = document.querySelector('.video-icon');
+
+        if (videoElement) {
+            videoElement.addEventListener('click', function() {
+                if (this.paused) {
+                    this.play();
+                } else {
+                    this.pause();
+                }
+            });
+        }
   	</script></body>
 </html>
