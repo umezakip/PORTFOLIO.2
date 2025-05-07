@@ -2,20 +2,6 @@ body, html {
   margin: 0;
 }
 
-@font-face {
-  font-family: 'Zorque';
-  src: url('./fonts/Zorque-Regular.woff2') format('woff2'),
-       url('./fonts/Zorque-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-  font-weight: 400;
-  font-style: normal;
-}
 
 .background-video {
   	position: absolute;
