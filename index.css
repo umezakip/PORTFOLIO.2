@@ -418,6 +418,7 @@ body, html {
   	display: inline-block;
   	height: 8.375rem;
   	flex-shrink: 0;
+    font-family: Poppins;
 }
 .conclusion {
   	align-self: stretch;
@@ -426,6 +427,7 @@ body, html {
   	display: inline-block;
   	height: 3.313rem;
   	flex-shrink: 0;
+  	font-family: Poppins;
 }
 .prev1text {
   	position: absolute;
@@ -438,6 +440,7 @@ body, html {
   	align-items: flex-start;
   	justify-content: flex-start;
   	gap: 0.687rem;
+  	font-family: Poppins;
 }
 .prev1 {
   	position: absolute;
@@ -493,6 +496,7 @@ body, html {
   	align-items: flex-start;
   	justify-content: flex-start;
   	gap: 1.562rem;
+    font-family: Poppins;
 }
 .prev4 {
   	position: absolute;
@@ -501,7 +505,7 @@ body, html {
   	right: 0%;
   	left: 0%;
   	height: 21.438rem;
-  	font-family: Inter;
+  	font-family: Poppins;
 }
 .midtext4 {
   	align-self: stretch;
@@ -511,6 +515,7 @@ body, html {
   	display: inline-block;
   	height: 8.375rem;
   	flex-shrink: 0;
+  	font-family: Poppins;
 }
 .prev5 {
   	position: absolute;
@@ -519,6 +524,7 @@ body, html {
   	right: 0%;
   	left: 0%;
   	height: 21.438rem;
+  	font-family: Poppins;
 }
 .prev6 {
   	position: absolute;
@@ -527,6 +533,7 @@ body, html {
   	right: 0%;
   	left: 0%;
   	height: 21.438rem;
+  	font-family: Poppins;
 }
 .prev-work {
   	position: absolute;
