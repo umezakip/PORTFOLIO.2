@@ -807,6 +807,12 @@ body, html {
   	cursor: pointer;
 }
 
+.design-link,
+.editing-link,
+.prev-link {
+  margin: 1.5rem;
+}
+
 .nav-bar {
   	position: responsive;
   	top: 0.563rem;
