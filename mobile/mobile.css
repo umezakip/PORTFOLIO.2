@@ -531,6 +531,13 @@ body {
     gap: 1.25rem;
     margin: 20px auto 0 auto; /* Add top margin for spacing and auto for horizontal centering */
 }
+
+.links .linkedin-icon,
+.links .github-icon,
+.links .email-icon,
+.links .instagram-icon {
+    filter: invert(100%);
+  
 .picture-icon {
   	position: absolute;
   	top: calc(50% - 634.5px);
