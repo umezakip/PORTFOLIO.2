@@ -569,6 +569,12 @@ body {
   	text-align: left;
   	color: #000;
 }
+
+.about-me .links {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .copywrite {
   	position: absolute;
   	bottom: 0rem;
