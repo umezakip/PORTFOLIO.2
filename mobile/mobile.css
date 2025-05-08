@@ -557,6 +557,7 @@ body {
   	text-align: center;
   	display: inline-block;
   	width: 19.938rem;
+    margin: auto;
 }
 .about-me {
   	position: absolute;
@@ -565,7 +566,7 @@ body {
   	right: 0rem;
   	left: 0rem;
   	height: 84.813rem;
-  	text-align: left;
+  	text-align: center;
   	color: #000;
 }
 .copywrite {
