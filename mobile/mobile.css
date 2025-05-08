@@ -4,9 +4,9 @@ body {
 
 @font-face {
   font-family: 'Zorque';
-  src: url('/zorque.ttf') format('woff2'),
-       url('/zorque.ttf') format('woff'),
-       url('/zorque.ttf') format('truetype'); /* Add other formats if you have them */
+  src: url('./zorque.ttf') format('woff2'),
+       url('./zorque.ttf') format('woff'),
+       url('./zorque.ttf') format('truetype'); /* Add other formats if you have them */
   font-weight: 400;
   font-style: normal;
 }
@@ -297,26 +297,29 @@ body {
   	text-align: left;
   	font-family: Zorque;
 }
-.video-editing-header {
+.video-header {
   	position: absolute;
-  	top: calc(50% - 392px);
-  	left: 0%;
+  	top: calc(50% - 127px);
+  	left: calc(50% - 105px);
   	line-height: 3.544rem;
+  	display: inline-block;
+  	width: 13.063rem;
 }
 .video-icon {
   	position: absolute;
-  	top: calc(50% - 224px);
-  	left: calc(50% - 558px);
-  	width: 70rem;
-  	height: 38.5rem;
+  	top: calc(50% - 50px);
+  	left: calc(50% - 161px);
+  	width: 20.125rem;
+  	height: 11.063rem;
 }
 .video-editing {
   	position: absolute;
-  	width: 78.06%;
-  	top: calc(50% - 1256.5px);
-  	right: 11.11%;
-  	left: 10.83%;
-  	height: 49rem;
+  	top: calc(50% - 1329.95px);
+  	left: calc(50% - 160.5px);
+  	width: 20.125rem;
+  	height: 15.875rem;
+  	text-align: left;
+  	font-family: Zorque;
 }
 .prev-header {
   	position: absolute;
@@ -808,4 +811,3 @@ body {
   	font-family: Poppins;
     padding: 0;
 }
-
