@@ -806,12 +806,12 @@ body {
 .background-parent {
   	width: 100%;
   	position: relative;
-  	background-color: #fff;
+  	background-color: #000000;
   	height: 403.813rem;
   	overflow: hidden;
   	text-align: center;
   	font-size: 2.25rem;
-  	color: #fff;
+  	color: #000000;
   	font-family: Poppins;
     padding: 0;
 }
