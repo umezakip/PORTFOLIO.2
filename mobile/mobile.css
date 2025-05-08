@@ -297,29 +297,26 @@ body {
   	text-align: left;
   	font-family: Zorque;
 }
-.video-header {
+.video-editing-header {
   	position: absolute;
-  	top: calc(50% - 127px);
-  	left: calc(50% - 105px);
+  	top: calc(50% - 392px);
+  	left: 0%;
   	line-height: 3.544rem;
-  	display: inline-block;
-  	width: 13.063rem;
 }
 .video-icon {
   	position: absolute;
-  	top: calc(50% - 50px);
-  	left: calc(50% - 161px);
-  	width: 20.125rem;
-  	height: 11.063rem;
+  	top: calc(50% - 224px);
+  	left: calc(50% - 558px);
+  	width: 70rem;
+  	height: 38.5rem;
 }
 .video-editing {
   	position: absolute;
-  	top: calc(50% - 1329.95px);
-  	left: calc(50% - 160.5px);
-  	width: 20.125rem;
-  	height: 15.875rem;
-  	text-align: left;
-  	font-family: Zorque;
+  	width: 78.06%;
+  	top: calc(50% - 1256.5px);
+  	right: 11.11%;
+  	left: 10.83%;
+  	height: 49rem;
 }
 .prev-header {
   	position: absolute;
