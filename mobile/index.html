@@ -13,11 +13,13 @@
 <body>
   	
   	<div class="background-parent">
-    		<img class="background-icon" alt="" src="background.svg">
-    		
     		<div class="home" data-scroll-to="homeContainer">
       			<div class="home-background">
-        				<div class="shot-12">
+        				<div class="background-video">
+        <video autoplay loop muted playsinline>
+          <source src="originals/backgroundvid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
         				</div>
         				<div class="overlay">
         				</div>
@@ -301,5 +303,16 @@
         				}
       			});
     		}
+              const videoElement = document.querySelector('.video-icon');
+
+        if (videoElement) {
+            videoElement.addEventListener('click', function() {
+                if (this.paused) {
+                    this.play();
+                } else {
+                    this.pause();
+                }
+            });
+        }
   	</script></body>
 </html>
