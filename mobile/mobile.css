@@ -571,9 +571,18 @@ body {
   	color: #000;
 }
 
-.about-me .links {
-  left: 50%;
-  transform: translateX(-50%);
+.about-me .links1 {
+  display: flex; /* Enable flexbox for the container */
+  justify-content: center; /* Center the items horizontally */
+  width: 100%; /* Make sure it takes the full width of its parent */
+  /* Keep other styles */
+  border-radius: 18.54px;
+  height: 4.5rem;
+  overflow: hidden;
+  align-items: center;
+  padding: 0rem 0.562rem 0rem 0.937rem;
+  box-sizing: border-box;
+  gap: 1.25rem;
 }
 
 .copywrite {
