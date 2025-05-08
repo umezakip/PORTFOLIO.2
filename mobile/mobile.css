@@ -554,7 +554,8 @@ body {
   	display: inline-block;
   	width: 11rem;
 }
-.body {;
+.body {
+    position: absolute;
     top: auto;
     left: auto; /* Center the left edge of the body */
     transform: none; /* Shift it back by half its width to truly center */
