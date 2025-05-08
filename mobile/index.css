@@ -11,43 +11,39 @@ body {
   font-style: normal;
 }
 
-.background-icon {
+.background-video {
   	position: absolute;
   	width: 100%;
-  	top: calc(50% - 3230.5px);
-  	right: 0rem;
-  	left: 0rem;
-  	max-width: 100%;
-  	overflow: hidden;
-  	height: 403.813rem;
+  	top: 0;
+  	left: 0;
+  	height: 100%;
+    transform-origin: 0,0;
+    z-index: 0;
 }
-.shot-12 {
-  	position: absolute;
-  	width: calc(100% - 532px);
-  	top: 43.938rem;
-  	right: -6.812rem;
-  	left: 40.063rem;
-  	height: 43.938rem;
-  	transform:  rotate(-180deg);
-  	transform-origin: 0 0;
+.background-video video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(180deg);
 }
+
 .overlay {
   	position: absolute;
   	width: 100%;
   	top: 0rem;
   	right: 0rem;
   	left: 0rem;
-  	background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), linear-gradient(180deg, rgba(0, 0, 0, 0) 68%, #000 85%), radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 9%, #000 60%);
-  	height: 43.938rem;
+  	background: linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), linear-gradient(180deg, rgba(0, 0, 0, 0) 68%, #000 85%), radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 9%, #000 60%);
+  	height: 100%;
 }
 .home-background {
-  	position: absolute;
+    position: relative;
   	width: 100%;
-  	top: 0rem;
-  	right: 0rem;
-  	left: 0rem;
-  	height: 43.938rem;
+  	height: 64rem;
+    overflow: hidden;
 }
+
 .home {
   	position: absolute;
   	width: calc(100% + 532px);
