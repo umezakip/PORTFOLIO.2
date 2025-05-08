@@ -2,6 +2,15 @@ body {
   margin:0;
 }
 
+@font-face {
+  font-family: 'Zorque';
+  src: url('./zorque.ttf') format('woff2'),
+       url('./zorque.ttf') format('woff'),
+       url('./zorque.ttf') format('truetype'); /* Add other formats if you have them */
+  font-weight: 400;
+  font-style: normal;
+}
+
 .background-icon {
   	position: absolute;
   	width: 100%;
