@@ -531,13 +531,6 @@ body {
     gap: 1.25rem;
     margin: 20px auto 0 auto; /* Add top margin for spacing and auto for horizontal centering */
 }
-
-.links .linkedin-icon,
-.links .github-icon,
-.links .email-icon,
-.links .instagram-icon {
-    filter: invert(100%);
-  
 .picture-icon {
   	position: absolute;
   	top: calc(50% - 634.5px);
@@ -556,9 +549,9 @@ body {
 }
 .body {
     position: absolute;
-    top: auto;
-    left: auto; /* Center the left edge of the body */
-    transform: none; /* Shift it back by half its width to truly center */
+    top: calc(50% - 268.5px);
+    left: 50%; /* Center the left edge of the body */
+    transform: translateX(-50%); /* Shift it back by half its width to truly center */
     font-size: 1rem;
     line-height: 1.688rem;
     text-align: center;
